@@ -1,0 +1,93 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on OS X and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'body':
+  'alt-shift-h': 'editor:move-selection-left'
+  'alt-shift-l': 'editor:move-selection-right'
+  'ctrl-=':'editor:auto-indent'
+  'ctrl-;':'custom:semicolonize'
+  'ctrl-,':'custom:commanize'
+  'ctrl-alt-shift-j': 'vim-mode-plus:move-down'
+  'ctrl-alt-shift-k': 'vim-mode-plus:move-up'
+  'ctrl-alt-shift-l': 'vim-mode-plus:move-right'
+  'ctrl-alt-shift-h': 'vim-mode-plus:move-left'
+  # 'ctrl--': 'choose-pane:start'
+'atom-workspace:not([mini])':
+  'ctrl-i': 'cursor-history:next-within-editor'
+  'ctrl-o': 'cursor-history:prev-within-editor'
+'atom-text-editor.vim-mode-plus.visual-mode':
+  'ctrl-k': 'vim-mode-plus-user:move-selected-text-up'
+  'ctrl-j': 'vim-mode-plus-user:move-selected-text-down'
+  'ctrl-h': 'vim-mode-plus-user:move-selected-text-left'
+  'ctrl-l': 'vim-mode-plus-user:move-selected-text-right'
+  's': 'vim-mode-plus:surround'
+'atom-text-editor.vim-mode-plus':
+  'ctrl-c': 'unset!'
+'atom-text-editor.vim-mode-plus.normal-mode':
+  # surround: ys
+  # -------------------------
+  'S': 'vim-mode-plus:surround-smart-word'
+  's': 'vim-mode-plus:surround'
+  's d': 'vim-mode-plus:delete-surround-any-pair'
+  's c': 'vim-mode-plus:change-surround-any-pair'
+  's w': 'vim-mode-plus:surround-word'
+  's m': 'vim-mode-plus:map-surround'
+  ': q enter': 'core:close'
+  'ctrl-up': 'vim-mode-plus:move-to-previous-fold-start-with-same-indent'
+  'ctrl-down': 'vim-mode-plus:move-to-next-fold-start-with-same-indent'
+  'd r': 'emmet:remove-tag'
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'alt-shift-c': 'choose-pane:start'
+  'Q': 'vim-mode-plus:move-to-previous-subword'
+  'q': 'vim-mode-plus:move-to-next-subword'
+  'w': 'vim-mode-plus:move-to-next-smart-word'
+  'b': 'vim-mode-plus:move-to-previous-smart-word'
+  'e': 'vim-mode-plus:move-to-end-of-smart-word'
+'atom-text-editor.vim-mode-plus.operator-pending-mode, atom-text-editor.vim-mode-plus.visual-mode':
+  "'": 'vim-mode-plus:inner-any-quote'
+  # Use closing pair as forwarding version of pair-text-object
+  'i }': 'vim-mode-plus:inner-curly-bracket-allow-forwarding'
+  'a }': 'vim-mode-plus:a-curly-bracket-allow-forwarding'
+
+  'i >': 'vim-mode-plus:inner-angle-bracket-allow-forwarding'
+  'a >': 'vim-mode-plus:a-angle-bracket-allow-forwarding'
+
+  'i )': 'vim-mode-plus:inner-parenthesis-allow-forwarding'
+  'a )': 'vim-mode-plus:a-parenthesis-allow-forwarding'
+'.platform-darwin .project-find atom-text-editor':
+  'ctrl-j': 'focus-pane-or-panel:focus-below'
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'ctrl-w': 'editor:delete-to-previous-word-boundary'
+'atom-text-editor:not([mini])':
+  'ctrl-shift-E': 'emmet:expand-abbreviation'
+  'ctrl-right': 'emmet:next-edit-point'
+  'ctrl-left': 'emmet:previous-edit-point'
