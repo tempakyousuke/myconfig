@@ -1,0 +1,55 @@
+"*":
+  core:
+    disabledPackages: [
+      "language-go"
+      "language-hyperlink"
+      "language-java"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-property-list"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-toml"
+      "about"
+      "background-tips"
+      "language-clojure"
+      "language-csharp"
+      "welcome"
+    ]
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Yutapon coding Sl"
+    fontSize: 16
+    invisibles: {}
+    scrollPastEnd: true
+    softWrap: true
+    tabLength: 4
+  "goto-definition":
+    performanceMode: true
+  # 環境による
+  # "linter-php":
+  #   executablePath: "D:\\tool\\php-7.0.8-nts-Win32-VC14-x64\\php"
+  "linter-ui-default":
+    panelHeight: 81
+    showPanel: true
+  "magical-selection":
+    goDark: true
+  narrow:
+    queryCurrentWordByDoubleClick: false
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
+  welcome:
+    showOnStartup: false
+".diff":
+  editor:
+    tabLength: 4
