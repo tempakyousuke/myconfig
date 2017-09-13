@@ -1,5 +1,9 @@
 "*":
   core:
+    customFileTypes:
+      "text.html.riot": [
+        "tag"
+      ]
     disabledPackages: [
       "language-go"
       "language-hyperlink"
