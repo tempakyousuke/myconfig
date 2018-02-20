@@ -57,3 +57,6 @@
 ".diff":
   editor:
     tabLength: 4
+"source.css.stylus":
+  editor:
+    tabLength: 2
