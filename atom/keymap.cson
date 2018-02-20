@@ -65,6 +65,7 @@
   'ctrl-up': 'vim-mode-plus:move-to-previous-fold-start-with-same-indent'
   'ctrl-down': 'vim-mode-plus:move-to-next-fold-start-with-same-indent'
   'd r': 'emmet:remove-tag'
+  'ctrl-]': 'editor:indent-selected-rows'
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'alt-shift-c': 'choose-pane:start'
   'Q': 'vim-mode-plus:move-to-previous-subword'
@@ -87,6 +88,7 @@
   'ctrl-j': 'focus-pane-or-panel:focus-below'
 'atom-text-editor.vim-mode-plus.insert-mode':
   'ctrl-w': 'editor:delete-to-previous-word-boundary'
+  'ctrl-[': 'editor:outdent-selected-rows'
 'atom-text-editor:not([mini])':
   'ctrl-shift-E': 'emmet:expand-abbreviation'
   'ctrl-right': 'emmet:next-edit-point'
