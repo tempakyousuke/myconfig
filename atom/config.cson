@@ -1,9 +1,9 @@
 "*":
+  "":
+    diff:
+      editor:
+        tabLength: 4
   core:
-    customFileTypes:
-      "text.html.riot": [
-        "tag"
-      ]
     disabledPackages: [
       "language-go"
       "language-hyperlink"
@@ -38,25 +38,30 @@
     scrollPastEnd: true
     softWrap: true
     tabLength: 4
+  "exception-reporting":
+    userId: "4f0a9785-774f-4d86-82cd-f13955941e79"
   "goto-definition":
     performanceMode: true
-  # 環境による
-  # "linter-php":
-  #   executablePath: "D:\\tool\\php-7.0.8-nts-Win32-VC14-x64\\php"
-  "linter-ui-default":
-    panelHeight: 81
-    showPanel: true
+  "line-ending-selector":
+    defaultLineEnding: "LF"
+  "linter-php":
+    executablePath: "D:\\tool\\php-7.0.8-Win32-VC14-x86\\php"
+  "linter-phpmd":
+    rulesOrConfigFile: [
+      "codesize"
+      "controversial"
+      "design"
+      "unusedcode"
+    ]
   "magical-selection":
     goDark: true
-  narrow:
-    queryCurrentWordByDoubleClick: false
+  source:
+    css:
+      stylus:
+        editor:
+          tabLength: 2
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
-  welcome:
-    showOnStartup: false
-".diff":
-  editor:
-    tabLength: 4
-"source.css.stylus":
+".jade.riot.source":
   editor:
     tabLength: 2
